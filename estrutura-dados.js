@@ -87,6 +87,17 @@ function removeElementoFinalArray(vetor1)
     document.write("Novo array: " + vetor1.join(" - "));
 }
 
+function removeElementoInicioArray(vetor1)
+{
+    document.write("Antigo array: " + vetor1.join(" - "));
+
+    // remove valor ao inicio do array com shift()
+    vetor1.shift();
+
+    document.write("<br>");
+    document.write("Novo array: " + vetor1.join(" - "));
+}
+
 
 
 
