@@ -120,7 +120,27 @@ function pegaParteArray(vetor1, inicio, fim)
     document.write("Novo array recortado: " + vetor.join(" - "));
 }
 
+/**
+ * Caso pontas, chamar outra funcao.
+ * @param vetor1
+ * @param vetorEntrada
+ * @param inicio
+ * @param fim
+ */
+function adicionaMeioArray(vetor1, vetorEntrada, inicio, fim)
+{
+    document.write("Antigo array: " + vetor1.join(","));
+    document.write("<br>");
 
+    // pega intervalo inicial
+    vetorInicial = vetor1.slice(0,inicio+1);
+    // pega o intervalo final
+    vetorFinal = vetor1.slice(fim,vetor1.length);
+    // junta o inicial, com o novo e o final
+    vetor = vetorInicial.concat(vetorEntrada, vetorFinal);
+
+    document.write("Novo array completo: " + vetor.join(","));
+}
 
 
 
