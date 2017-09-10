@@ -48,3 +48,11 @@ function removeUltimosValoresArray(vetor, novoTamanho)
     document.write("<br>");
     document.write("Elementos: " + vetor);
 }
+
+function concatenaArrays(vetor1, vetor2)
+{
+    // concatena os valores do primeiro e em seguida do segundo
+    vetor = vetor1.concat(vetor2);
+
+    document.write("Novo vetor: " + vetor);
+}
