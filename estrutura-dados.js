@@ -33,3 +33,18 @@ function tamanhoArray(vetor)
 
 
 }
+
+function removeUltimosValoresArray(vetor, novoTamanho)
+{
+    document.write("Tamanho inicial: " + vetor.length);
+    document.write("<br>");
+    document.write("Elementos: " + vetor);
+
+    // define um novo tamanho para remover os ultimos elementos ate o indice de novo tamanho inclusive
+    vetor.length = novoTamanho
+
+    document.write("<br>");
+    document.write("Tamanho final: " + vetor.length);
+    document.write("<br>");
+    document.write("Elementos: " + vetor);
+}
