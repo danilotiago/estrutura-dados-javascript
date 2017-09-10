@@ -171,6 +171,38 @@ function ordenaDecrescente(vetor1)
     document.write("Novo array ordenado: " + vetor.join(","));
 }
 
+function buscaValor(vetor1, valorBusca)
+{
+    // retorna o indice do valor e se não achar retorna -1
+    var indice = vetor1.indexOf(5);
+
+    document.write("índice localizado: " + indice);
+}
+
+function buscaValorAPartirDe(vetor1, valorBusca, partida)
+{
+    // retorna o indice do valor a partir do indice do parametro "partida" e se não achar retorna -1
+    var indice = vetor1.indexOf(valorBusca, partida);
+
+    document.write("índice localizado: " + indice);
+}
+
+function buscaValorDeTrasPraFrente(vetor1, valorBusca)
+{
+    // retorna o indice do valor e se não achar retorna -1 de tras pra frente
+    var indice = vetor1.lastIndexOf(valorBusca);
+
+    document.write("índice localizado: " + indice);
+}
+
+function buscaValorDeTrasPraFrenteAPartirDe(vetor1, valorBusca, partida)
+{
+    // retorna o indice do valor a partir do indice do parametro "partida" e se não achar retorna -1
+    var indice = vetor1.lastIndexOf(valorBusca,partida);
+
+    document.write("índice localizado: " + indice);
+}
+
 
 
 
