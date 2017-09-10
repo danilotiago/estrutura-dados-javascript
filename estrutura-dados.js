@@ -57,7 +57,7 @@ function concatenaArrays(vetor1, vetor2)
     document.write("Novo vetor: " + vetor);
 }
 
-function alteraSeparadorArray(vetor1, vetor2)
+function alteraSeparadorArray(vetor1)
 {
     // troca o separador dos valores do array, o novo separador deve ser passado por string para join()
     vetor = vetor1.join(" - ");
