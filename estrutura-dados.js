@@ -41,7 +41,7 @@ function removeUltimosValoresArray(vetor, novoTamanho)
     document.write("Elementos: " + vetor);
 
     // define um novo tamanho para remover os ultimos elementos ate o indice de novo tamanho inclusive
-    vetor.length = novoTamanho
+    vetor.length = novoTamanho;
 
     document.write("<br>");
     document.write("Tamanho final: " + vetor.length);
@@ -121,25 +121,34 @@ function pegaParteArray(vetor1, inicio, fim)
 }
 
 /**
- * Caso pontas, chamar outra funcao.
+ * Adiciona elemento no meio do vetor e trata caso primeira ou ultima posicao
+ * A posicao inicial é exclusiva, ou seja, será inserido os valores após ela.
  * @param vetor1
  * @param vetorEntrada
  * @param inicio
  * @param fim
  */
-function adicionaMeioArray(vetor1, vetorEntrada, inicio, fim)
+function adicionaMeioArray(vetor1, vetorEntrada, posicaoInicial, posicaoFinal)
 {
-    document.write("Antigo array: " + vetor1.join(","));
+    if(posicaoInicial === 0 && posicaoFinal === 0) return adicionaNovoElementoInicioArray(vetor1, vetorEntrada);
+    else if(posicaoInicial === vetor1.length && posicaoFinal === vetor1.length) return adicionaNovoElementoFinalArray(vetor1, vetorEntrada);
+
+    document.write("Antigo array: " + vetor1);
     document.write("<br>");
 
-    // pega intervalo inicial
-    vetorInicial = vetor1.slice(0,inicio+1);
-    // pega o intervalo final
-    vetorFinal = vetor1.slice(fim,vetor1.length);
-    // junta o inicial, com o novo e o final
-    vetor = vetorInicial.concat(vetorEntrada, vetorFinal);
+    /**
+     *  Example
+     At position 2, remove 2 items:
 
-    document.write("Novo array completo: " + vetor.join(","));
+     var fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+     fruits.splice(2, 2);
+     The result of fruits will be:
+     Banana,Orange,Kiwi
+     */
+    // na posicao posicao+1, nao remove ninguem (0) e adiciona o vetorEntrada
+    vetor1.splice(posicaoInicial+1, 0, vetorEntrada);
+
+    document.write("Novo array completo: " + vetor1.join(","));
 }
 
 function reverteOrdem(vetor1)
