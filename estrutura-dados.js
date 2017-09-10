@@ -109,6 +109,17 @@ function adicionaNovoElementoInicioArray(vetor1, novoValor)
     document.write("Novo array: " + vetor1.join(" - "));
 }
 
+function pegaParteArray(vetor1, inicio, fim)
+{
+    document.write("Antigo array: " + vetor1.join(" - "));
+
+    // pega intervalo de valores do array do inicio (inclusive) e fim (exclusive)
+    vetor = vetor1.slice(inicio, fim);
+
+    document.write("<br>");
+    document.write("Novo array recortado: " + vetor.join(" - "));
+}
+
 
 
 
