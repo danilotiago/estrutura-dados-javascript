@@ -203,6 +203,16 @@ function buscaValorDeTrasPraFrenteAPartirDe(vetor1, valorBusca, partida)
     document.write("índice localizado: " + indice);
 }
 
+function usandoForEach(vetor1)
+{
+    // funcao anonima que recebe indice e valor e executa algo no iteração deste laço
+    vetor1.forEach(function(valor, indice) {
+
+        document.write("índice: " + indice + " valor: " + valor);
+        document.write("<br>");
+
+    });
+}
 
 
 
