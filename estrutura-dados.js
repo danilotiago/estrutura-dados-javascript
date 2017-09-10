@@ -214,6 +214,23 @@ function usandoForEach(vetor1)
     });
 }
 
+function usandoSwitch(numero)
+{
+    switch (numero)
+    {
+        case 10:
+            document.write("Selecionado 10");
+            break;
+        case 20:
+            document.write("Selecionado 20");
+            break;
+        case 30:
+            document.write("Selecionado 30");
+            break;
+
+    }
+}
+
 
 
 
