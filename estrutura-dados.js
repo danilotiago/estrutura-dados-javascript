@@ -26,3 +26,10 @@ function criacaoArrays()
 
     document.write(vetor);
 }
+
+function tamanhoArray(vetor)
+{
+    document.write(vetor.length);
+
+
+}
