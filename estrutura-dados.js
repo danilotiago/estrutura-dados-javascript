@@ -64,3 +64,45 @@ function alteraSeparadorArray(vetor1)
 
     document.write("Novo separador: " + vetor);
 }
+
+function adicionaNovoElementoFinalArray(vetor1, novoValor)
+{
+    document.write("Antigo array: " + vetor1.join(" - "));
+
+    // adiciona um novo valor ao final do array com push()
+    vetor1.push(novoValor);
+
+    document.write("<br>");
+    document.write("Novo array: " + vetor1.join(" - "));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
