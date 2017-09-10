@@ -76,6 +76,17 @@ function adicionaNovoElementoFinalArray(vetor1, novoValor)
     document.write("Novo array: " + vetor1.join(" - "));
 }
 
+function removeElementoFinalArray(vetor1)
+{
+    document.write("Antigo array: " + vetor1.join(" - "));
+
+    // remove valor ao final do array com pop()
+    vetor1.pop();
+
+    document.write("<br>");
+    document.write("Novo array: " + vetor1.join(" - "));
+}
+
 
 
 
