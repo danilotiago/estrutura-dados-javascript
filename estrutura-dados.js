@@ -142,6 +142,13 @@ function adicionaMeioArray(vetor1, vetorEntrada, inicio, fim)
     document.write("Novo array completo: " + vetor.join(","));
 }
 
+function reverteOrdem(vetor1)
+{
+    vetor = vetor1.reverse();
+
+    document.write("Novo array completo: " + vetor.join(","));
+}
+
 
 
 
