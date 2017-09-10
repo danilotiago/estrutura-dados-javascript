@@ -149,6 +149,27 @@ function reverteOrdem(vetor1)
     document.write("Novo array completo: " + vetor.join(","));
 }
 
+function ordenaCrescente(vetor1)
+{
+    vetor = vetor1.sort(function(a, b) {
+        if (a < b) return -1;  // joga os menores a esquerda
+        if (a > b) return  1;  // joga os maiores a direita
+                   return  0;  // mantem posicao
+    });
+
+    document.write("Novo array ordenado: " + vetor.join(","));
+}
+
+function ordenaDecrescente(vetor1)
+{
+    vetor = vetor1.sort(function(a, b) {
+        if (a < b) return  1;  // joga os menores a direita
+        if (a > b) return -1; // joga os maiores a esquerda
+                   return  0;  // mantem posicao
+    });
+
+    document.write("Novo array ordenado: " + vetor.join(","));
+}
 
 
 
